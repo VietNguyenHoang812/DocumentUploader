@@ -1,0 +1,28 @@
+Hiện trạng:
+
+- Đẩy dữ liệu văn bản vào vectordb, graphdb hiện tại đang làm thủ công
+
+- Dữ liệu ảnh hiện tại vẫn đang upload thủ công lên MinIO, chưa chuẩn hóa vị trí lưu trữ.
+
+Mục đích:
+
+Xây dựng một luồng tự động upload văn bản vào vectordb, graphdb, ảnh vào MinIO
+
+Mỗi tài liệu được tổ chức như sau:
+
+
+VTN001
+  |--VTN001_VB
+  |    |--VTN001_VB.md
+  |    |--img
+  |        |--image1.png
+  |        |--image2.png
+  |        |-...
+  |
+  |--VTN001_PL01
+  |    |--VTN001_PL01.md
+  |    |--img
+  |        |--image1.png
+  |        |--image2.png
+  |        |-...
+  |--...
